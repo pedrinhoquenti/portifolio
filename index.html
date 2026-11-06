@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo profissional de Pedro Henrique Chrestani.">
+  <title>Pedro Henrique Chrestani | Currículo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f5;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+      background: #fff;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: -1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    .hero {
+      min-height: 480px;
+      padding: 110px 12%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .tag {
+      color: #888;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 70px);
+      line-height: 1.1;
+      letter-spacing: -3px;
+      max-width: 750px;
+    }
+
+    .hero p {
+      margin-top: 22px;
+      max-width: 540px;
+      color: #777;
+      font-size: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: .3s;
+    }
+
+    .button:hover {
+      background: #555;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 75px 12%;
+      border-bottom: 1px solid #e9e9e9;
+    }
+
+    .section-title {
+      font-size: 25px;
+      margin-bottom: 35px;
+      letter-spacing: -1px;
+    }
+
+    .content {
+      max-width: 750px;
+    }
+
+    .content p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .item {
+      padding: 20px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .item h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .item span {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 10px 18px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #444;
+      background: white;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-info a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #888;
+      font-size: 12px;
+      background: white;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 6%;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 90px 7%;
+        min-height: 420px;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Pedro Henrique.</div>
+
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <span class="tag">Currículo profissional • 2026</span>
+
+      <h1>Pedro Henrique Chrestani.</h1>
+
+      <p>
+        Estudante de Desenvolvimento de Sistemas,
+        interessado em tecnologia, aprendizado e
+        crescimento profissional.
+      </p>
+
+      <a href="#sobre" class="button">
+        Conheça meu perfil →
+      </a>
+    </div>
+
+    <section id="sobre" class="reveal">
+      <h2 class="section-title">01. Sobre mim</h2>
+
+      <div class="content">
+        <p>
+          Tenho 16 anos e moro em Ponta Grossa, Paraná.
+          Atualmente, curso o segundo ano de Desenvolvimento
+          de Sistemas e busco oportunidades para ampliar
+          meus conhecimentos e experiências.
+        </p>
+
+        <p>
+          Sou uma pessoa persistente, dedicada e com
+          muita vontade de aprender. Acredito que cada
+          experiência representa uma oportunidade de
+          evolução pessoal e profissional.
+        </p>
+      </div>
+    </section>
+
+    <section id="experiencia" class="reveal">
+      <h2 class="section-title">02. Experiência profissional</h2>
+
+      <div class="item">
+        <h3>Lojas França</h3>
+        <span>Atendente</span>
+
+        <p>
+          Experiência com atendimento ao cliente,
+          comunicação e relacionamento interpessoal.
+          Desenvolvimento de responsabilidade e
+          organização no ambiente profissional.
+        </p>
+      </div>
+    </section>
+
+    <section id="formacao" class="reveal">
+      <h2 class="section-title">03. Formação acadêmica</h2>
+
+      <div class="item">
+        <h3>Desenvolvimento de Sistemas</h3>
+        <span>Ensino médio técnico • 2º ano • Em andamento</span>
+
+        <p>
+          Formação voltada à tecnologia, programação
+          e desenvolvimento de soluções digitais.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades" class="reveal">
+      <h2 class="section-title">04. Habilidades</h2>
+
+      <h3>Conhecimentos técnicos</h3>
+
+      <div class="skills" style="margin: 18px 0 35px">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+      </div>
+
+      <h3>Características pessoais</h3>
+
+      <div class="skills" style="margin-top: 18px">
+        <span class="skill">Persistência</span>
+        <span class="skill">Vontade de aprender</span>
+        <span class="skill">Comprometimento</span>
+        <span class="skill">Responsabilidade</span>
+        <span class="skill">Comunicação</span>
+      </div>
+    </section>
+
+    <section id="contato" class="reveal">
+      <h2 class="section-title">05. Vamos conversar?</h2>
+
+      <div class="content">
+        <p>
+          Estou aberto a oportunidades e novos desafios
+          que contribuam para meu desenvolvimento.
+        </p>
+
+        <div class="contact-info">
+          <a href="mailto:pedro.chrestani@escola.pr.gov.br">
+            ✉ pedro.chrestani@escola.pr.gov.br
+          </a>
+
+          <a href="tel:+5542984123768">
+            ☎ (42) 98412-3768
+          </a>
+
+          <span>⌖ Ponta Grossa – Paraná</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Pedro Henrique Chrestani.
+    Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Atualização automática do ano
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Animação de entrada das seções
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    document.querySelectorAll(".reveal").forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
